@@ -1,0 +1,333 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(165, 71, 165, 0.2);
+}
+
+.heading {
+    color: purple;
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: center;
+    box-shadow: 0 0 5px black;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    border-bottom: 3px solid gray;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    line-height: 3;
+}
+
+li {
+    list-style: none;
+    font-size: 1.2rem;
+    color: purple;
+    opacity: 0.3;
+    transition: 1s all;
+    height: 64px;
+    width: 25%;
+}
+
+li:hover {
+    opacity: 1;
+}
+
+#team-li {
+    opacity: 1;
+    border-bottom: 3px solid rebeccapurple;
+}
+
+.icon-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.img1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.img2 {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+.para {
+    line-height: 2;
+    margin: 0 10px;
+    color: white;
+    background-color: purple;
+    border-radius: 25px;
+    width: 125px;
+    padding: 1px 5px 1px 10px;
+}
+
+.web {
+    background-color: white;
+    color: purple;
+    margin-left: 10px;
+    padding: 5px 15px;
+    border-radius: 25px;
+
+}
+
+.session-div {
+    width: 50%;
+    height: 125px;
+    background-color: rgba(128, 0, 128, 0.1);
+    margin: 10px auto 0 auto;
+    border-radius: 5px;
+
+}
+
+.session-heading {
+    font-size: 0.7rem;
+    position: relative;
+    margin-top: 45px;
+
+}
+
+.session-para {
+    color: purple;
+    font-size: 2.5rem;
+    position: relative;
+    margin-top: -15px;
+}
+
+.main-para {
+    font-size: 0.9rem;
+    text-align: initial;
+    margin: 20px auto;
+    width: 90%;
+    font-weight: 900;
+}
+
+.slider-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.slider-values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.slider-value {
+    font-size: 1.5rem;
+
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.card1, .card2 {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    box-shadow: 0 0 5px black;
+    border-radius: 20px;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: rgba(183, 74, 183, 0.2);
+    transition: 1s all;
+}
+
+.card1:hover, .card2:hover {
+    transform: scale(1.03) translateY(-10px);
+}
+
+.card-heading {
+    color: purple;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.card-cost-p {
+    font-size: 3rem;
+    margin-top: -15px;
+
+}
+
+.card-month-p {
+    color: purple;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-top: -30px;
+    border-bottom: 2px solid grey;
+    width: 40%;
+    margin: -40px auto 0px auto;
+    padding-bottom: 10px;
+}
+
+.card-retention-p {
+    color: purple;
+    font-size: 1.3rem;
+
+}
+
+.card-member-p {
+    color: purple;
+    font-size: 1.3rem;
+    margin-top: -5px;
+}
+
+.card-button {
+    width: 50%;
+    color: white;
+    background-color: purple;
+    margin: 0 auto;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-header {
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    margin: -10px -10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+input[type='range'] {
+    appearance: none;
+    background: purple;
+    height: 15px;
+    width: 90%;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .cards {
+        flex-direction: column;
+    }
+    .card1, .card2 {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .container {
+        height: 1300px;
+        padding: 0;
+        width: 90%;
+    }
+    .heading {
+        font-size: 1.7rem;
+    }
+    .main-para {
+        font-size: 0.7rem;
+    }
+
+    li {
+        font-size: 0.7rem;
+        width: auto;
+        height: 50px;
+        margin: 0 10px;
+        line-height: 3;
+        padding: 0;
+    }
+    .navbar {
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cards {
+        flex-direction: column;
+    }
+    .card1, .card2 {
+        width: 80%;
+        margin: 10px auto;
+
+    }
+
+    .container {
+        height: 1300px;
+        padding: 0;
+        width: 90%;
+    }
+
+   .heading {
+    font-size: 1.7rem;
+   }
+
+   .main-para {
+    font-size: 0.7rem;
+   }
+
+   li {
+    font-size: 0.6rem;
+    width: auto;
+    height: 50px;
+    margin: 0 10px;
+    line-height: 5;
+
+   }
+
+   .navbar {
+    height: 50px;
+   }
+
+   ul {
+    height: 50px;
+   }
+}
+
+@media screen and (max-width: 376px) {
+    li {
+        font: 0.5rem;
+        width: auto;
+        line-height: 7;
+    }
+    .container {
+        padding-bottom: 20px;
+        width: 90%;
+    }
+}
